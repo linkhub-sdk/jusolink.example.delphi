@@ -63,7 +63,7 @@ begin
         StringGrid1.ColWidths[3] := 280;
         StringGrid1.ColWidths[4] := 150;
         StringGrid1.ColWidths[5] := 100;
-        StringGrid1.RowCount := 20;
+        StringGrid1.RowCount := 21;
 end;
 
 // 주소검색

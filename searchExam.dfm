@@ -72,7 +72,7 @@ object search: Tsearch
   object Label1: TLabel
     Left = 376
     Top = 26
-    Width = 297
+    Width = 345
     Height = 20
     AutoSize = False
     Caption = '> 검색어를 검색하고 원하는 주소정보 셀을 선택합니다.'
