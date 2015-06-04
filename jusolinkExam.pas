@@ -48,7 +48,6 @@ begin
         // 주소 API 모듈 초기화
         jusolinkService := TJusolinkService.Create(LinkID,SecretKey);
 
-
         resultZipcode := '';
         resultAddr := '';
         resultSectionNum := '';

@@ -1,6 +1,6 @@
 object JusolinkForm: TJusolinkForm
-  Left = 634
-  Top = 252
+  Left = 610
+  Top = 224
   BorderStyle = bsDialog
   Caption = '林家傅农 API SDK 抗力'
   ClientHeight = 323

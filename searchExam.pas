@@ -6,6 +6,11 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms,
   StdCtrls, TypInfo, Jusolink, ExtCtrls, Grids;
 
+const
+        // 링크아이디.
+        LinkID = 'TESTER_JUSO';
+        // 파트너 통신용 비밀키. 유출 주의.
+        SecretKey = 'FjaRgAfVUPvSDHTrdd/uw/dt/Cdo3GgSFKyE1+NQ+bc=';
 type
   Tsearch = class(TForm)
     txtIndex: TEdit;
@@ -26,6 +31,7 @@ type
     procedure selectCell(Sender: TObject; ACol, ARow: Integer;
   var CanSelect: Boolean);
     procedure txtSuggestClick(Sender: TObject);
+
 
   private
     { Private declarations }
@@ -52,7 +58,8 @@ implementation
 procedure Tsearch.FormCreate(Sender: TObject);
 begin
         // 주소 API 모듈 초기화
-        jusolinkService := TJusolinkService.Create(jusolinkExam.LinkID, jusolinkExam.SecretKey);
+        jusolinkService := TJusolinkService.Create(LinkID,SecretKey);
+        
         StringGrid1.Cells[0,0] := '우편번호';
         StringGrid1.Cells[1,0] := '새우편번호';
         StringGrid1.Cells[2,0] := '지번주소';
