@@ -1,10 +1,10 @@
 object search: Tsearch
-  Left = 438
-  Top = 230
+  Left = 300
+  Top = 174
   BorderStyle = bsDialog
   Caption = '주소검색 Example'
-  ClientHeight = 613
-  ClientWidth = 1003
+  ClientHeight = 709
+  ClientWidth = 1010
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object search: Tsearch
   PixelsPerInch = 96
   TextHeight = 13
   object txtCurrentPage: TLabel
-    Left = 453
-    Top = 558
+    Left = 461
+    Top = 654
     Width = 21
     Height = 20
     Caption = '00'
@@ -29,8 +29,8 @@ object search: Tsearch
     ParentFont = False
   end
   object Label9: TLabel
-    Left = 487
-    Top = 558
+    Left = 495
+    Top = 654
     Width = 6
     Height = 20
     Caption = '/'
@@ -42,8 +42,8 @@ object search: Tsearch
     ParentFont = False
   end
   object txtTotalPage: TLabel
-    Left = 509
-    Top = 558
+    Left = 517
+    Top = 654
     Width = 21
     Height = 20
     Caption = '00'
@@ -107,15 +107,15 @@ object search: Tsearch
     Left = 16
     Top = 96
     Width = 969
-    Height = 449
+    Height = 529
     ColCount = 6
     FixedCols = 0
     TabOrder = 4
     OnSelectCell = selectCell
   end
   object btnPrevPage: TButton
-    Left = 341
-    Top = 554
+    Left = 349
+    Top = 650
     Width = 81
     Height = 25
     Caption = '이전 페이지'
@@ -123,8 +123,8 @@ object search: Tsearch
     OnClick = btnPrevPageClick
   end
   object btnNextPage: TButton
-    Left = 553
-    Top = 554
+    Left = 561
+    Top = 650
     Width = 81
     Height = 25
     Caption = '다음 페이지'
