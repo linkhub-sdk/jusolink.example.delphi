@@ -105,7 +105,7 @@ begin
         
 
         txtCurrentPage.Caption := IntToStr(searchResult.page);
-
+        
         for i:= 0 to Length(searchResult.juso)-1 do
         begin
                 StringGrid1.Cells[0,i+1] := searchResult.juso[i].zipcode; // 우편번호
