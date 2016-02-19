@@ -142,6 +142,8 @@ begin
                 suggestIndex := ''
         end;
 
+        searchResult.Free;
+
 end;
 
 // 다음페이지
